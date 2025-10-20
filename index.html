@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untuk jong</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page1 fade-page">
+
+  <img src="Happy Birthday Dog GIF.gif" alt="birthday gif" class="cute-gif fade">
+  <h1 class="fade">HAPPY BIRTHDAY BUBUBBBB</h1>
+  <p class="caption fade">click for continue</p>
+
+  <div>
+    <button class="btn blue" onclick="goPage('page2.html')">continue</button>
+    <button class="btn gray" onclick="goPage('page3.html')">gamau</button>
+  </div>
+
+  <script>
+    function goPage(page) {
+      document.body.classList.add('fade-out');
+      setTimeout(() => window.location.href = page, 500);
+    }
+  </script>
+
+</body>
+</html>
